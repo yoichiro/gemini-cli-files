@@ -1,0 +1,36 @@
+{
+  "selectedAuthType": "oauth-personal",
+  "theme": "ANSI",
+  "hideTips": true,
+  "hideBanner": true,
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "slack-mcp-server@latest",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "SLACK_MCP_XOXC_TOKEN": "$SLACK_MCP_XOXC_TOKEN",
+        "SLACK_MCP_XOXD_TOKEN": "$SLACK_MCP_XOXD_TOKEN"
+      }
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "imagen": {
+      "command": "mcp-imagen-go",
+      "env": {
+        "MCP_SERVER_REQUEST_TIMEOUT": "300",
+        "PROJECT_ID": "$GEMINI_CLI_PROJECT_ID"
+      }
+    }
+  },
+  "preferredEditor": "vim"
+}
