@@ -1,0 +1,2 @@
+description = "Generate a daily report from Slack"
+prompt = "Slackの「#snippets_yoichiro」チャンネルの今日の投稿内容から、日報を作ってください。生成結果は、まず「やったこと」を述べた後、もし可能であれば「今後の予定」を述べてください。また、文体は丁寧にしてください。"

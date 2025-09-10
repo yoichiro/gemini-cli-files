@@ -1,0 +1,2 @@
+description = "Commit and Push using Git"
+prompt = "差分を確認して、コミットとプッシュを行ってください。"

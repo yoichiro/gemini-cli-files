@@ -1,17 +1,12 @@
 {
   "selectedAuthType": "oauth-personal",
-  "theme": "ANSI",
+  "theme": "Default",
   "hideTips": true,
   "hideBanner": true,
   "mcpServers": {
     "slack": {
       "command": "npx",
-      "args": [
-        "-y",
-        "slack-mcp-server@latest",
-        "--transport",
-        "stdio"
-      ],
+      "args": ["-y", "slack-mcp-server@latest", "--transport", "stdio"],
       "env": {
         "SLACK_MCP_XOXC_TOKEN": "$SLACK_MCP_XOXC_TOKEN",
         "SLACK_MCP_XOXD_TOKEN": "$SLACK_MCP_XOXD_TOKEN"
@@ -19,18 +14,27 @@
     },
     "context7": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@upstash/context7-mcp"
-      ]
+      "args": ["-y", "@upstash/context7-mcp"]
     },
     "imagen": {
       "command": "mcp-imagen-go",
       "env": {
         "MCP_SERVER_REQUEST_TIMEOUT": "300",
-        "PROJECT_ID": "$GEMINI_CLI_PROJECT_ID"
+        "PROJECT_ID": "hardy-position-464100-s4"
+      }
+    },
+    "github": {
+      "httpUrl": "https://api.githubcopilot.com/mcp/",
+      "trust": true,
+      "headers": {
+        "Authorization": "Bearer $GITHUB_PAT_FOR_MCP"
       }
     }
   },
-  "preferredEditor": "vim"
+  "preferredEditor": "vim",
+  "hasSeenIdeIntegrationNudge": true,
+  "ideMode": true,
+  "showMemoryUsage": true,
+  "autoConfigureMaxOldSpaceSize": true,
+  "showLineNumbers": false
 }
