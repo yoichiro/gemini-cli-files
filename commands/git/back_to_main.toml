@@ -1,0 +1,3 @@
+description = "Go back to the main branch"
+
+prompt = "mainブランチに戻って、originから最新のmainブランチの内容をpullして、その後にmainブランチに移動する前のブランチを削除してください。"
