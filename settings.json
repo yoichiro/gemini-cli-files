@@ -1,12 +1,27 @@
 {
-  "selectedAuthType": "oauth-personal",
-  "theme": "Default",
-  "hideTips": true,
-  "hideBanner": true,
+  "advanced": {
+    "autoConfigureMemory": true
+  },
+  "ide": {
+    "hasSeenNudge": true,
+    "enabled": true
+  },
+  "ui": {
+    "hideTips": true,
+    "hideBanner": true,
+    "showMemoryUsage": true,
+    "showLineNumbers": false,
+    "theme": "Default"
+  },
   "mcpServers": {
     "slack": {
       "command": "npx",
-      "args": ["-y", "slack-mcp-server@latest", "--transport", "stdio"],
+      "args": [
+        "-y",
+        "slack-mcp-server@latest",
+        "--transport",
+        "stdio"
+      ],
       "env": {
         "SLACK_MCP_XOXC_TOKEN": "$SLACK_MCP_XOXC_TOKEN",
         "SLACK_MCP_XOXD_TOKEN": "$SLACK_MCP_XOXD_TOKEN"
@@ -14,7 +29,10 @@
     },
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp"]
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
     },
     "imagen": {
       "command": "mcp-imagen-go",
@@ -31,10 +49,12 @@
       }
     }
   },
-  "preferredEditor": "vim",
-  "hasSeenIdeIntegrationNudge": true,
-  "ideMode": true,
-  "showMemoryUsage": true,
-  "autoConfigureMaxOldSpaceSize": true,
-  "showLineNumbers": false
+  "general": {
+    "preferredEditor": "vim"
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  }
 }
