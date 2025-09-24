@@ -47,6 +47,10 @@
       "headers": {
         "Authorization": "Bearer $GITHUB_PAT_FOR_MCP"
       }
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [ "chrome-devtools-mcp@latest" ]
     }
   },
   "general": {
