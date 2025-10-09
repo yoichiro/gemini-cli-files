@@ -4,3 +4,5 @@ installation_id
 oauth_creds.json
 user_id
 .env
+extensions/
+.genkit/

@@ -11,7 +11,7 @@
     "hideBanner": true,
     "showMemoryUsage": true,
     "showLineNumbers": false,
-    "theme": "Default"
+    "theme": "ANSI"
   },
   "mcpServers": {
     "slack": {
@@ -50,7 +50,9 @@
     },
     "chrome-devtools": {
       "command": "npx",
-      "args": [ "chrome-devtools-mcp@latest" ]
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
     }
   },
   "general": {
